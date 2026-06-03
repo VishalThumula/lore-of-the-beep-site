@@ -4,42 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>The Lore Of The Beep</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-title">The Lore Of The Beep</span>
+        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+            <button class="tab-link active" data-target="about">About</button>
+            <button class="tab-link" data-target="authors">Authors</button>
+            <button class="tab-link" data-target="resources">Resources</button>
+            <button class="tab-link" data-target="contact">Contact</button>
+            <button class="tab-link" data-target="questions">Questions</button>
+            <button class="tab-link" data-target="search">Search</button>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <h1 class="title">The Lore Of The Beep</h1>
+                <p class="subtitle">A story hidden between signal and silence.</p>
+                <button class="btn hero-btn" type="button">Enter the Lore</button>
+            </div>
+        </section>
 
-        <h1 class="title">The Lore Of The Beep</h1>
+        <section class="page-section active" id="about">
+            <div class="section-inner">
+                <h2>About</h2>
+            </div>
+        </section>
 
-        <p class="subtitle">
-            A story hidden between signal and silence.
-        </p>
+        <section class="page-section" id="authors">
+            <div class="section-inner">
+                <h2>Authors</h2>
+            </div>
+        </section>
 
-        <button class="btn">
-            Enter the Lore
-        </button>
+        <section class="page-section" id="resources">
+            <div class="section-inner">
+                <h2>Resources</h2>
+            </div>
+        </section>
 
-    </div>
+        <section class="page-section" id="contact">
+            <div class="section-inner">
+                <h2>Contact</h2>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>What is this?</h2>
-        <p>
-            Two creators. One universe. A mystery that slowly unfolds through fragments of story, hidden meaning, and coded history.
-        </p>
-    </div>
+        <section class="page-section" id="questions">
+            <div class="section-inner">
+                <h2>Questions</h2>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Status</h2>
-        <p>
-            Currently in development — first release coming soon.
-        </p>
-    </div>
+        <section class="page-section" id="search">
+            <div class="section-inner">
+                <h2>Search</h2>
+            </div>
+        </section>
+    </main>
 
+    <script src="script.js" defer></script>
 </body>
 
 </html>
